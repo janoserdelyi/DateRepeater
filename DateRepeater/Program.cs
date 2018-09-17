@@ -9,7 +9,7 @@ class Program
 		Console.WriteLine("Hello World!");
 		
 		EventRepeatParser erp = new EventRepeatParser();
-		erp.Input = "repeat weekly every(1)[monday,wednesday,friday] {start(2010-6-11) end(2010-7-2)}";
+		erp.Input = "repeat weekly every(1)[monday,wednesday,friday] {start(2018-09-09) end(2018-09-23)}";
 		erp.Parse();
 		
 		Console.WriteLine("Input : " + erp.Input);
