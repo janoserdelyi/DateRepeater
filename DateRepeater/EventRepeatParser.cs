@@ -4,8 +4,6 @@ using scg = System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using com.reactivesoftware.ExtTypes;
-
 namespace DateRepeater
 {
 public class EventRepeatParser
@@ -176,11 +174,11 @@ public class EventRepeatParser
 				if (targetDayNumber > daysInMonth) {
 					targetDayNumber = daysInMonth;
 				}
-				endDt = new DateTimeObj(new DateTime(
+				endDt = new DateTime(
 					Convert.ToInt32(endSplit[0]),
 					Convert.ToInt32(endSplit[1]),
 					targetDayNumber
-				));
+				);
 			} catch (Exception oops) {
 				throw new Exception("Error determining End Date. input \"" + end + "\". " + oops.Message);
 			}
@@ -1002,7 +1000,7 @@ public class EventRepeatParser
 		set { startDt = value; }
 	}
 	
-	public DateTimeObj EndDt {
+	public DateTime? EndDt {
 		get { return endDt; }
 		set { endDt = value; }
 	}
@@ -1023,7 +1021,7 @@ public class EventRepeatParser
 	private int theNumber;
 	private string[] dayArray;
 	private DateTime startDt;
-	private DateTimeObj endDt;
+	private DateTime? endDt;
 	private int occurNumber;
 	private bool hasBeenParsed;
 	private static scg.Dictionary<int, string> monthListByNumber;
