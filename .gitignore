@@ -1,0 +1,7 @@
+bin/
+obj/
+sql/
+.vs/
+packages/
+changelog*.txt
+build.log
