@@ -38,20 +38,20 @@ repeat daily every(0) {start(2006-11-14) occur(20)}
 
 Weekly:
 "repeat weekly every second week on thursday and saturday"
-repeat weekly every(2)[Thursday,Saturday] {}
+repeat weekly every(2)[Thursday,Saturday] {start...}
 
 Monthly:
 "repeat monthly every 2nd month on the 12th day..." note: start(end|occur) syntax the same from now on.
-repeat monthly every(2) day(12) {}
+repeat monthly every(2) day(12) {start...}
 
 "repeat monthly every 2nd month on the 2nd Thursday..."
-repeat monthly every(2) the(2)[Thursday] {}
+repeat monthly every(2) the(2)[Thursday] {start...}
 
 Yearly:
 "repeat yearly every October 12..."
-repeat yearly every(10) day(12) {}
+repeat yearly every(10) day(12) {start...}
 
 "repeat yearly every second Thursday of October"
-repeat yearly every(10) the(2)[Thursday] {}
+repeat yearly every(10) the(2)[Thursday] {start...}
 ```
 
