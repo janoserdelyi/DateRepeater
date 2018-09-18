@@ -22,8 +22,19 @@ Console.WriteLine("English parse : " + erp.ToEnglish());
 Console.WriteLine();
 Console.WriteLine("Result dates : ");
 foreach (DateTime date in erp.GenerateDateList()) {
-	Console.WriteLine(date.ToString());
+	Console.WriteLine(date.ToString("yyyy-MM-dd") + " - " + date.DayOfWeek.ToString());
 }
+```
+
+with the expected output of 
+
+```
+2018-09-10 - Monday
+2018-09-12 - Wednesday
+2018-09-14 - Friday
+2018-09-17 - Monday
+2018-09-19 - Wednesday
+2018-09-21 - Friday
 ```
 
 Other example patterns : 
