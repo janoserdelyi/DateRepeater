@@ -46,7 +46,7 @@ namespace DateRepeater
 			Console.WriteLine();
 			Console.WriteLine("Result dates : ");
 			foreach (DateTime date in erp.GenerateDateList()) {
-				Console.WriteLine(date.ToString());
+				Console.WriteLine(date.ToString("yyyy-MM-dd") + " - " + date.DayOfWeek.ToString());
 			}
 			Console.WriteLine();
 			Console.WriteLine("-".PadRight(80, '-'));
