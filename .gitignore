@@ -2,6 +2,7 @@ bin/
 obj/
 sql/
 .vs/
+.vscode/
 packages/
 changelog*.txt
 build.log
